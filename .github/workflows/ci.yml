@@ -1,4 +1,4 @@
-name: CI-CD Pipeline
+name: CI
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12.13"
+          python-version: "3.12"
 
       - name: Create required runtime folders
         run: |
@@ -81,7 +81,6 @@ jobs:
 
       - name: Lint backend
         run: |
-          ruff check src --fix
           ruff check src
 
       - name: Smoke test imports
