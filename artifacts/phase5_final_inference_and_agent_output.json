@@ -1,0 +1,51 @@
+{
+  "row_idx": 0,
+  "input_data": {
+    "no_of_dependents": 2,
+    "education": "Graduate",
+    "self_employed": "No",
+    "income_annum": 9600000,
+    "loan_amount": 29900000,
+    "loan_term": 12,
+    "cibil_score": 778,
+    "residential_assets_value": 2400000,
+    "commercial_assets_value": 17600000,
+    "luxury_assets_value": 22700000,
+    "bank_asset_value": 8000000
+  },
+  "prediction_result": {
+    "prediction": "Approved",
+    "probability": 0.9994674324989319
+  },
+  "local_explanation": {
+    "top_positive": {
+      "num__cibil_score": 6.927209854125977,
+      "num__loan_amount": 1.158663272857666,
+      "num__residential_assets_value": 0.7222190499305725,
+      "num__commercial_assets_value": 0.46850499510765076,
+      "num__bank_asset_value": 0.1781574785709381
+    },
+    "top_negative": {
+      "num__loan_term": -1.3889175653457642,
+      "num__income_annum": -0.9754577875137329,
+      "num__no_of_dependents": -0.04543555527925491,
+      "num__luxury_assets_value": -0.04261438548564911,
+      "cat__self_employed_ Yes": -0.008942937478423119
+    }
+  },
+  "agent_summary": "The applicant, a graduate with 2 dependents and not self-employed, has an annual income of \u20b99,600,000. They requested a loan amount of \u20b929,900,000 with a short loan term of 12 months. Their credit score is strong at 778. Asset values include residential assets worth \u20b92,400,000, commercial assets \u20b917,600,000, luxury assets \u20b922,700,000, and bank assets \u20b98,000,000.\n\nThe model strongly approved the loan with a high confidence probability of 99.95%. Key positive factors driving approval were the excellent credit score (largest positive influence), the high loan amount requested, and substantial residential, commercial, and bank asset values. Negative influences included the very short loan term, relatively lower income compared to the loan amount, number of dependents, and luxury asset value, but these were outweighed by the positives.\n\nIn line with typical approval criteria, the applicant demonstrates strong creditworthiness and a solid financial profile supported by significant assets. The short loan term and high loan amount present some risk, but the model\u2019s confidence suggests the applicant\u2019s overall financial strength justifies approval.",
+  "retrieved_docs": [
+    {
+      "source": "/Users/pranavsrinivasvenkatesh/Projects/ML with Agentic AI/knowledge_base/improvement_tips.md",
+      "content": "- Make sure all submitted details are accurate and complete.\n- If financial burden is high, consider reducing risk factors before reapplying."
+    },
+    {
+      "source": "/Users/pranavsrinivasvenkatesh/Projects/ML with Agentic AI/knowledge_base/improvement_tips.md",
+      "content": "- Make sure all submitted details are accurate and complete.\n- If financial burden is high, consider reducing risk factors before reapplying."
+    },
+    {
+      "source": "/Users/pranavsrinivasvenkatesh/Projects/ML with Agentic AI/knowledge_base/faq.md",
+      "content": "# FAQ\n\n## Why was my loan application rejected?\nCommon reasons may include a weaker credit score, an unfavorable loan term, lower income strength relative to the requested loan, or weaker overall financial support from declared assets.\n\n## Why was my loan application approved?\nApplications are more likely to be approved when the applicant shows strong creditworthiness, stronger income, and a healthier financial profile supported by assets."
+    }
+  ]
+}

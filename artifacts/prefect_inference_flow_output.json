@@ -1,0 +1,54 @@
+{
+  "row_idx": 0,
+  "actual_label": 1,
+  "input_data": {
+    "no_of_dependents": 2,
+    "education": "Graduate",
+    "self_employed": "No",
+    "income_annum": 9600000,
+    "loan_amount": 29900000,
+    "loan_term": 12,
+    "cibil_score": 778,
+    "residential_assets_value": 2400000,
+    "commercial_assets_value": 17600000,
+    "luxury_assets_value": 22700000,
+    "bank_asset_value": 8000000
+  },
+  "prediction_result": {
+    "predicted_label_numeric": 1,
+    "prediction": "approved",
+    "probability": 0.9993563294410706,
+    "threshold": 0.5
+  },
+  "local_explanation": {
+    "top_positive": {
+      "num__cibil_score": 6.90809440612793,
+      "num__loan_amount": 1.129502296447754,
+      "num__residential_assets_value": 0.7310604453086853,
+      "num__commercial_assets_value": 0.5035622119903564,
+      "num__bank_asset_value": 0.17253272235393524
+    },
+    "top_negative": {
+      "num__loan_term": -1.4221904277801514,
+      "num__income_annum": -0.9915207624435425,
+      "num__luxury_assets_value": -0.04325142502784729,
+      "cat__education_Graduate": -0.039682984352111816,
+      "num__no_of_dependents": -0.03275803104043007
+    }
+  },
+  "summary": "The applicant has 2 dependents, is a graduate, not self-employed, with an annual income of 9,600,000. They requested a loan amount of 29,900,000 over a 12-month term. Their credit score (CIBIL) is strong at 778. Asset values include residential assets worth 2,400,000, commercial assets at 17,600,000, luxury assets at 22,700,000, and bank assets totaling 8,000,000.\n\nThe model strongly approved the loan with a 99.9% probability. Key positive factors driving approval were the high CIBIL score (most influential), the large loan amount requested, and the value of residential, commercial, and bank assets. Negative influences included the short loan term, high income (which may indicate risk or repayment capacity nuances), luxury asset value, graduate education status, and number of dependents, but these were outweighed by the positives.\n\nOverall, the decision reflects confidence in the applicant\u2019s creditworthiness and asset backing despite some risk factors. It is recommended to ensure all details are accurate and consider reducing financial burden if reapplying, per standard guidelines.",
+  "retrieved_docs": [
+    {
+      "source": "/Users/pranavsrinivasvenkatesh/Projects/ML with Agentic AI/knowledge_base/improvement_tips.md",
+      "content": "- Make sure all submitted details are accurate and complete.\n- If financial burden is high, consider reducing risk factors before reapplying."
+    },
+    {
+      "source": "/Users/pranavsrinivasvenkatesh/Projects/ML with Agentic AI/knowledge_base/improvement_tips.md",
+      "content": "- Make sure all submitted details are accurate and complete.\n- If financial burden is high, consider reducing risk factors before reapplying."
+    },
+    {
+      "source": "/Users/pranavsrinivasvenkatesh/Projects/ML with Agentic AI/knowledge_base/improvement_tips.md",
+      "content": "- Make sure all submitted details are accurate and complete.\n- If financial burden is high, consider reducing risk factors before reapplying."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+model_name,model_path,preprocessor_path,accuracy,precision,recall,f1,roc_auc
+logistic_regression,artifacts/retraining/20260418112713/logistic_regression.joblib,artifacts/retraining/20260418112713/preprocessor.joblib,0.914519906323185,0.9209558823529411,0.943502824858757,0.932093023255814,0.9725501857002092
+random_forest,artifacts/retraining/20260418112713/random_forest.joblib,artifacts/retraining/20260418112713/preprocessor.joblib,0.9800936768149883,0.9812734082397003,0.9868173258003766,0.984037558685446,0.9986356719315737
+xgboost,artifacts/retraining/20260418112713/xgboost.joblib,artifacts/retraining/20260418112713/preprocessor.joblib,0.9836065573770492,0.9849906191369606,0.9887005649717514,0.9868421052631579,0.9986415023934045

@@ -1,0 +1,18 @@
+{
+  "question": "Why was this loan approved?",
+  "answer": "The loan application was approved with a high confidence of 93%.\n\nThis positive decision was mainly driven by the applicant\u2019s strong credit score of 812, which is the most influential factor in the model. Additionally, the applicant\u2019s substantial residential assets (valued at 1,800,000), commercial assets (500,000), and bank assets (300,000) significantly strengthened the financial profile, supporting the approval.\n\nOn the other hand, some factors slightly reduced the approval likelihood, such as the relatively long loan term of 18 years, the applicant\u2019s income of 850,000 per annum, the presence of 2 dependents, and the luxury assets value. However, these negative influences were outweighed by the strong credit score and asset values.\n\nAccording to the approval rules, a strong credit score combined with healthy asset values and reasonable loan amount relative to financial strength typically leads to approval, which aligns with this case.\n\nIn summary, the loan was approved because the applicant demonstrated strong creditworthiness and solid financial backing through assets, despite some minor negative factors like loan term and dependents.",
+  "retrieved_docs": [
+    {
+      "source": "/Users/pranavsrinivasvenkatesh/Projects/ML with Agentic AI/knowledge_base/faq.md",
+      "content": "# FAQ\n\n## Why was my loan application rejected?\nCommon reasons may include a weaker credit score, an unfavorable loan term, lower income strength relative to the requested loan, or weaker overall financial support from declared assets.\n\n## Why was my loan application approved?\nApplications are more likely to be approved when the applicant shows strong creditworthiness, stronger income, and a healthier financial profile supported by assets."
+    },
+    {
+      "source": "/Users/pranavsrinivasvenkatesh/Projects/ML with Agentic AI/knowledge_base/approval_rules.md",
+      "content": "- The relationship between **loan_amount** and other financial indicators is important. Loan amount should not be interpreted alone.\n- A longer **loan_term** can negatively affect approval likelihood in many cases.\n- A higher **no_of_dependents** may slightly weaken the application when repayment burden is a concern.\n- **Education** has some effect, but it appears weaker than major financial and credit-related variables."
+    },
+    {
+      "source": "/Users/pranavsrinivasvenkatesh/Projects/ML with Agentic AI/knowledge_base/faq.md",
+      "content": "## What factors matter most in this model?\nThe most important factors are credit score, loan term, loan amount, annual income, and declared asset values.\n\n## Does credit score matter a lot?\nYes. Credit score is the strongest driver in the model and has a major influence on approval likelihood.\n\n## Do assets matter?\nYes. Residential, commercial, and bank asset values all contribute to the financial strength of an application."
+    }
+  ]
+}

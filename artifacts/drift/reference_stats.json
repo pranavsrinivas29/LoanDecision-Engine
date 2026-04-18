@@ -1,0 +1,99 @@
+{
+  "reference_source": "training_data",
+  "features": {
+    "no_of_dependents": {
+      "mean": 2.4987116420707425,
+      "std": 1.695711518231882,
+      "min": 0.0,
+      "max": 5.0,
+      "q25": 1.0,
+      "median": 3.0,
+      "q75": 4.0,
+      "missing_fraction": 0.0
+    },
+    "income_annum": {
+      "mean": 5059123.9166081045,
+      "std": 2806511.065804822,
+      "min": 200000.0,
+      "max": 9900000.0,
+      "q25": 2700000.0,
+      "median": 5100000.0,
+      "q75": 7500000.0,
+      "missing_fraction": 0.0
+    },
+    "loan_amount": {
+      "mean": 15133450.456781447,
+      "std": 9042303.732952276,
+      "min": 300000.0,
+      "max": 39500000.0,
+      "q25": 7700000.0,
+      "median": 14500000.0,
+      "q75": 21500000.0,
+      "missing_fraction": 0.0
+    },
+    "loan_term": {
+      "mean": 10.900445069102835,
+      "std": 5.708518560381566,
+      "min": 2.0,
+      "max": 20.0,
+      "q25": 6.0,
+      "median": 10.0,
+      "q75": 16.0,
+      "missing_fraction": 0.0
+    },
+    "cibil_score": {
+      "mean": 599.9360505973295,
+      "std": 172.41020390983462,
+      "min": 300.0,
+      "max": 900.0,
+      "q25": 453.0,
+      "median": 600.0,
+      "q75": 748.0,
+      "missing_fraction": 0.0
+    },
+    "residential_assets_value": {
+      "mean": 7472616.537830873,
+      "std": 6502874.814708318,
+      "min": -100000.0,
+      "max": 29100000.0,
+      "q25": 2200000.0,
+      "median": 5600000.0,
+      "q75": 11300000.0,
+      "missing_fraction": 0.0
+    },
+    "commercial_assets_value": {
+      "mean": 4973155.3056922,
+      "std": 4388452.008689157,
+      "min": 0.0,
+      "max": 19400000.0,
+      "q25": 1300000.0,
+      "median": 3700000.0,
+      "q75": 7600000.0,
+      "missing_fraction": 0.0
+    },
+    "luxury_assets_value": {
+      "mean": 15126305.926446475,
+      "std": 9102687.33978692,
+      "min": 300000.0,
+      "max": 39200000.0,
+      "q25": 7500000.0,
+      "median": 14600000.0,
+      "q75": 21700000.0,
+      "missing_fraction": 0.0
+    },
+    "bank_asset_value": {
+      "mean": 4976692.433825252,
+      "std": 3249804.610490215,
+      "min": 0.0,
+      "max": 14700000.0,
+      "q25": 2300000.0,
+      "median": 4600000.0,
+      "q75": 7100000.0,
+      "missing_fraction": 0.0
+    }
+  },
+  "prediction_reference": {
+    "approval_rate": null,
+    "probability_mean": null
+  }
+}

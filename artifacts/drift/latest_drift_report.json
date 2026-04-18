@@ -1,0 +1,311 @@
+{
+  "reference_source": "training_data",
+  "batch_size": 100,
+  "drifted_features": [
+    "income_annum",
+    "loan_amount",
+    "cibil_score",
+    "residential_assets_value",
+    "commercial_assets_value",
+    "luxury_assets_value",
+    "bank_asset_value"
+  ],
+  "feature_results": [
+    {
+      "feature_name": "no_of_dependents",
+      "reference": {
+        "mean": 2.4987116420707425,
+        "std": 1.695711518231882,
+        "min": 0.0,
+        "max": 5.0,
+        "q25": 1.0,
+        "median": 3.0,
+        "q75": 4.0,
+        "missing_fraction": 0.0
+      },
+      "current": {
+        "mean": 2.79,
+        "std": 1.595587666034054,
+        "min": 0.0,
+        "max": 5.0,
+        "q25": 2.0,
+        "median": 3.0,
+        "q75": 4.0,
+        "missing_fraction": 0.0
+      },
+      "mean_shift_ratio": 0.11657541951814011,
+      "std_shift_ratio": 0.05904533354955751,
+      "missing_shift_abs": 0.0,
+      "drift_detected": false,
+      "reasons": []
+    },
+    {
+      "feature_name": "income_annum",
+      "reference": {
+        "mean": 5059123.9166081045,
+        "std": 2806511.065804822,
+        "min": 200000.0,
+        "max": 9900000.0,
+        "q25": 2700000.0,
+        "median": 5100000.0,
+        "q75": 7500000.0,
+        "missing_fraction": 0.0
+      },
+      "current": {
+        "mean": 1346250.0,
+        "std": 732328.2648512209,
+        "min": 75000.0,
+        "max": 2475000.0,
+        "q25": 725000.0,
+        "median": 1375000.0,
+        "q75": 2081250.0,
+        "missing_fraction": 0.0
+      },
+      "mean_shift_ratio": 0.7338966148703084,
+      "std_shift_ratio": 0.7390609736857704,
+      "missing_shift_abs": 0.0,
+      "drift_detected": true,
+      "reasons": [
+        "mean_shift_exceeded",
+        "std_shift_exceeded"
+      ]
+    },
+    {
+      "feature_name": "loan_amount",
+      "reference": {
+        "mean": 15133450.456781447,
+        "std": 9042303.732952276,
+        "min": 300000.0,
+        "max": 39500000.0,
+        "q25": 7700000.0,
+        "median": 14500000.0,
+        "q75": 21500000.0,
+        "missing_fraction": 0.0
+      },
+      "current": {
+        "mean": 48432000.0,
+        "std": 28836393.255745422,
+        "min": 3300000.0,
+        "max": 112800000.0,
+        "q25": 25050000.0,
+        "median": 44100000.0,
+        "q75": 73650000.0,
+        "missing_fraction": 0.0
+      },
+      "mean_shift_ratio": 2.2003276541799592,
+      "std_shift_ratio": 2.189053819399899,
+      "missing_shift_abs": 0.0,
+      "drift_detected": true,
+      "reasons": [
+        "mean_shift_exceeded",
+        "std_shift_exceeded"
+      ]
+    },
+    {
+      "feature_name": "loan_term",
+      "reference": {
+        "mean": 10.900445069102835,
+        "std": 5.708518560381566,
+        "min": 2.0,
+        "max": 20.0,
+        "q25": 6.0,
+        "median": 10.0,
+        "q75": 16.0,
+        "missing_fraction": 0.0
+      },
+      "current": {
+        "mean": 12.1,
+        "std": 5.616938667993447,
+        "min": 2.0,
+        "max": 20.0,
+        "q25": 7.5,
+        "median": 12.0,
+        "q75": 18.0,
+        "missing_fraction": 0.0
+      },
+      "mean_shift_ratio": 0.11004641767309915,
+      "std_shift_ratio": 0.016042672265919204,
+      "missing_shift_abs": 0.0,
+      "drift_detected": false,
+      "reasons": []
+    },
+    {
+      "feature_name": "cibil_score",
+      "reference": {
+        "mean": 599.9360505973295,
+        "std": 172.41020390983462,
+        "min": 300.0,
+        "max": 900.0,
+        "q25": 453.0,
+        "median": 600.0,
+        "q75": 748.0,
+        "missing_fraction": 0.0
+      },
+      "current": {
+        "mean": 350.0,
+        "std": 1e-08,
+        "min": 350.0,
+        "max": 350.0,
+        "q25": 350.0,
+        "median": 350.0,
+        "q75": 350.0,
+        "missing_fraction": 0.0
+      },
+      "mean_shift_ratio": 0.41660448700903935,
+      "std_shift_ratio": 0.9999999999419987,
+      "missing_shift_abs": 0.0,
+      "drift_detected": true,
+      "reasons": [
+        "mean_shift_exceeded",
+        "std_shift_exceeded"
+      ]
+    },
+    {
+      "feature_name": "residential_assets_value",
+      "reference": {
+        "mean": 7472616.537830873,
+        "std": 6502874.814708318,
+        "min": -100000.0,
+        "max": 29100000.0,
+        "q25": 2200000.0,
+        "median": 5600000.0,
+        "q75": 11300000.0,
+        "missing_fraction": 0.0
+      },
+      "current": {
+        "mean": 1591600.0,
+        "std": 1463311.8054604768,
+        "min": -20000.0,
+        "max": 5180000.0,
+        "q25": 410000.0,
+        "median": 1120000.0,
+        "q75": 2510000.0,
+        "missing_fraction": 0.0
+      },
+      "mean_shift_ratio": 0.787009009234936,
+      "std_shift_ratio": 0.7749746308892904,
+      "missing_shift_abs": 0.0,
+      "drift_detected": true,
+      "reasons": [
+        "mean_shift_exceeded",
+        "std_shift_exceeded"
+      ]
+    },
+    {
+      "feature_name": "commercial_assets_value",
+      "reference": {
+        "mean": 4973155.3056922,
+        "std": 4388452.008689157,
+        "min": 0.0,
+        "max": 19400000.0,
+        "q25": 1300000.0,
+        "median": 3700000.0,
+        "q75": 7600000.0,
+        "missing_fraction": 0.0
+      },
+      "current": {
+        "mean": 1040235.2941176471,
+        "std": 866579.450850687,
+        "min": 0.0,
+        "max": 3260000.0,
+        "q25": 300000.0,
+        "median": 780000.0,
+        "q75": 1740000.0,
+        "missing_fraction": 0.15
+      },
+      "mean_shift_ratio": 0.7908299198042319,
+      "std_shift_ratio": 0.8025318610902306,
+      "missing_shift_abs": 0.15,
+      "drift_detected": true,
+      "reasons": [
+        "mean_shift_exceeded",
+        "std_shift_exceeded",
+        "missing_fraction_shift_exceeded"
+      ]
+    },
+    {
+      "feature_name": "luxury_assets_value",
+      "reference": {
+        "mean": 15126305.926446475,
+        "std": 9102687.33978692,
+        "min": 300000.0,
+        "max": 39200000.0,
+        "q25": 7500000.0,
+        "median": 14600000.0,
+        "q75": 21700000.0,
+        "missing_fraction": 0.0
+      },
+      "current": {
+        "mean": 1606800.0,
+        "std": 968770.2307564989,
+        "min": 70000.0,
+        "max": 3770000.0,
+        "q25": 667500.0,
+        "median": 1625000.0,
+        "q75": 2322500.0,
+        "missing_fraction": 0.0
+      },
+      "mean_shift_ratio": 0.893774461007647,
+      "std_shift_ratio": 0.893573162013145,
+      "missing_shift_abs": 0.0,
+      "drift_detected": true,
+      "reasons": [
+        "mean_shift_exceeded",
+        "std_shift_exceeded"
+      ]
+    },
+    {
+      "feature_name": "bank_asset_value",
+      "reference": {
+        "mean": 4976692.433825252,
+        "std": 3249804.610490215,
+        "min": 0.0,
+        "max": 14700000.0,
+        "q25": 2300000.0,
+        "median": 4600000.0,
+        "q75": 7100000.0,
+        "missing_fraction": 0.0
+      },
+      "current": {
+        "mean": 803625.0,
+        "std": 496519.1178343489,
+        "min": 45000.0,
+        "max": 1905000.0,
+        "q25": 412500.0,
+        "median": 780000.0,
+        "q75": 1155000.0,
+        "missing_fraction": 0.2
+      },
+      "mean_shift_ratio": 0.8385222694217599,
+      "std_shift_ratio": 0.8472157014512169,
+      "missing_shift_abs": 0.2,
+      "drift_detected": true,
+      "reasons": [
+        "mean_shift_exceeded",
+        "std_shift_exceeded",
+        "missing_fraction_shift_exceeded"
+      ]
+    }
+  ],
+  "prediction_drift": {
+    "reference_probability_mean": null,
+    "current_probability_mean": null,
+    "probability_mean_shift_abs": null,
+    "reference_approval_rate": null,
+    "current_approval_rate": null,
+    "approval_rate_shift_abs": null,
+    "drift_detected": false,
+    "reasons": []
+  },
+  "retraining_required": true,
+  "summary": "Detected drift in 7 feature(s): income_annum, loan_amount, cibil_score, residential_assets_value, commercial_assets_value, luxury_assets_value, bank_asset_value.",
+  "created_at": "2026-04-16T16:46:01.749664+00:00",
+  "thresholds": {
+    "mean_shift_ratio": 0.3,
+    "std_shift_ratio": 0.5,
+    "missing_shift_abs": 0.1,
+    "drifted_feature_count_for_retraining": 2,
+    "approval_rate_shift_abs": 0.15,
+    "probability_mean_shift_abs": 0.1
+  }
+}
