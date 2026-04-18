@@ -1,0 +1,92 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: src/docker/Dockerfile.api
+    container_name: ml_ai_backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./knowledge_base:/app/knowledge_base
+    depends_on:
+      - mlflow
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: src/docker/Dockerfile.frontend
+    container_name: ml_ai_frontend
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      API_BASE_URL: http://backend:8000
+    volumes:
+      - ./:/app
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  mlflow:
+    build:
+      context: .
+      dockerfile: src/docker/Dockerfile.mlflow
+    container_name: ml_ai_mlflow
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./mlruns:/app/mlruns
+      - ./mlflow:/app/mlflow
+    restart: unless-stopped
+
+  prefect:
+    build:
+      context: .
+      dockerfile: src/docker/Dockerfile.prefect
+    container_name: ml_ai_prefect
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./models:/app/models
+      - ./logs:/app/logs
+    depends_on:
+      - backend
+    profiles:
+      - orchestration
+  
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: ml_ai_prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: ml_ai_grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    volumes:
+      - ./grafana:/var/lib/grafana
+    depends_on:
+      - prometheus
+    restart: unless-stopped
