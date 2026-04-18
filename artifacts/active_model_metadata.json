@@ -1,7 +1,7 @@
 {
   "model_name": "xgboost",
-  "model_version": "20260418112714",
-  "selected_at": "2026-04-18T11:27:14.938140+00:00",
+  "model_version": "20260418165702",
+  "selected_at": "2026-04-18T16:57:02.918728+00:00",
   "selection_metrics": {
     "accuracy": 0.9836065573770492,
     "precision": 0.9849906191369606,

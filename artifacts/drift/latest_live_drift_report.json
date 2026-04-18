@@ -1,6 +1,6 @@
 {
   "reference_source": "training_data",
-  "batch_size": 65,
+  "batch_size": 67,
   "drifted_features": [
     "no_of_dependents",
     "income_annum",
@@ -25,8 +25,8 @@
         "missing_fraction": 0.0
       },
       "current": {
-        "mean": 2.0153846153846153,
-        "std": 0.71235919401786,
+        "mean": 2.014925373134328,
+        "std": 0.7016512999130243,
         "min": 0.0,
         "max": 7.0,
         "q25": 2.0,
@@ -34,8 +34,8 @@
         "q75": 2.0,
         "missing_fraction": 0.0
       },
-      "mean_shift_ratio": 0.1934304937586085,
-      "std_shift_ratio": 0.5799054341739468,
+      "mean_shift_ratio": 0.1936142853744776,
+      "std_shift_ratio": 0.5862201250808062,
       "missing_shift_abs": 0.0,
       "drift_detected": true,
       "reasons": [
@@ -55,8 +55,8 @@
         "missing_fraction": 0.0
       },
       "current": {
-        "mean": 9304615.384615384,
-        "std": 1657842.0421398387,
+        "mean": 9313432.835820895,
+        "std": 1633684.1911868246,
         "min": 0.0,
         "max": 9600000.0,
         "q25": 9600000.0,
@@ -64,8 +64,8 @@
         "q75": 9600000.0,
         "missing_fraction": 0.0
       },
-      "mean_shift_ratio": 0.8391752283572596,
-      "std_shift_ratio": 0.4092871885169567,
+      "mean_shift_ratio": 0.8409181094075863,
+      "std_shift_ratio": 0.4178949760462342,
       "missing_shift_abs": 0.0,
       "drift_detected": true,
       "reasons": [
@@ -85,8 +85,8 @@
         "missing_fraction": 0.0
       },
       "current": {
-        "mean": 28980000.0,
-        "std": 5163487.193748039,
+        "mean": 29007462.686567165,
+        "std": 5088245.553800631,
         "min": 0.0,
         "max": 29900000.0,
         "q25": 29900000.0,
@@ -94,8 +94,8 @@
         "q75": 29900000.0,
         "missing_fraction": 0.0
       },
-      "mean_shift_ratio": 0.9149631528356297,
-      "std_shift_ratio": 0.4289633099880199,
+      "mean_shift_ratio": 0.9167778537622686,
+      "std_shift_ratio": 0.4372843797252828,
       "missing_shift_abs": 0.0,
       "drift_detected": true,
       "reasons": [
@@ -115,8 +115,8 @@
         "missing_fraction": 0.0
       },
       "current": {
-        "mean": 11.661538461538461,
-        "std": 1.8996106732852318,
+        "mean": 11.671641791044776,
+        "std": 1.8719298024015696,
         "min": 1.0,
         "max": 12.0,
         "q25": 12.0,
@@ -124,8 +124,8 @@
         "q75": 12.0,
         "missing_fraction": 0.0
       },
-      "mean_shift_ratio": 0.06982223089155644,
-      "std_shift_ratio": 0.6672322857161282,
+      "mean_shift_ratio": 0.07074910400932961,
+      "std_shift_ratio": 0.6720813320301358,
       "missing_shift_abs": 0.0,
       "drift_detected": true,
       "reasons": [
@@ -145,8 +145,8 @@
         "missing_fraction": 0.0
       },
       "current": {
-        "mean": 754.0615384615385,
-        "std": 134.35428216508276,
+        "mean": 754.776119402985,
+        "std": 132.39648966076555,
         "min": 0.0,
         "max": 778.0,
         "q25": 778.0,
@@ -154,8 +154,8 @@
         "q75": 778.0,
         "missing_fraction": 0.0
       },
-      "mean_shift_ratio": 0.2569031944500636,
-      "std_shift_ratio": 0.22072894110521418,
+      "mean_shift_ratio": 0.2580942896355173,
+      "std_shift_ratio": 0.23208437401996834,
       "missing_shift_abs": 0.0,
       "drift_detected": false,
       "reasons": []
@@ -173,8 +173,8 @@
         "missing_fraction": 0.0
       },
       "current": {
-        "mean": 2326153.846153846,
-        "std": 414460.51053495967,
+        "mean": 2328358.2089552237,
+        "std": 408421.04779670615,
         "min": 0.0,
         "max": 2400000.0,
         "q25": 2400000.0,
@@ -182,8 +182,8 @@
         "q75": 2400000.0,
         "missing_fraction": 0.0
       },
-      "mean_shift_ratio": 0.6887095926336567,
-      "std_shift_ratio": 0.9362650331823202,
+      "mean_shift_ratio": 0.688414600539493,
+      "std_shift_ratio": 0.9371937705346977,
       "missing_shift_abs": 0.0,
       "drift_detected": true,
       "reasons": [
@@ -204,8 +204,8 @@
         "missing_fraction": 0.0
       },
       "current": {
-        "mean": 17058461.53846154,
-        "std": 3039377.0772563713,
+        "mean": 17074626.865671642,
+        "std": 2995087.683842512,
         "min": 0.0,
         "max": 17600000.0,
         "q25": 17600000.0,
@@ -213,8 +213,8 @@
         "q75": 17600000.0,
         "missing_fraction": 0.0
       },
-      "mean_shift_ratio": 2.43010834971043,
-      "std_shift_ratio": 0.3074147623721555,
+      "mean_shift_ratio": 2.4333588669809445,
+      "std_shift_ratio": 0.3175070211746139,
       "missing_shift_abs": 0.0,
       "drift_detected": true,
       "reasons": [
@@ -234,8 +234,8 @@
         "missing_fraction": 0.0
       },
       "current": {
-        "mean": 22001538.46153846,
-        "std": 3920105.66214316,
+        "mean": 22022388.05970149,
+        "std": 3862982.4104105122,
         "min": 0.0,
         "max": 22700000.0,
         "q25": 22700000.0,
@@ -243,8 +243,8 @@
         "q75": 22700000.0,
         "missing_fraction": 0.0
       },
-      "mean_shift_ratio": 0.45452158435269324,
-      "std_shift_ratio": 0.5693463352290729,
+      "mean_shift_ratio": 0.4558999511703693,
+      "std_shift_ratio": 0.5756217624298916,
       "missing_shift_abs": 0.0,
       "drift_detected": true,
       "reasons": [
@@ -265,8 +265,8 @@
         "missing_fraction": 0.0
       },
       "current": {
-        "mean": 7753846.153846154,
-        "std": 1381535.0351165321,
+        "mean": 7761194.0298507465,
+        "std": 1361403.492655687,
         "min": 0.0,
         "max": 8000000.0,
         "q25": 8000000.0,
@@ -274,8 +274,8 @@
         "q75": 8000000.0,
         "missing_fraction": 0.0
       },
-      "mean_shift_ratio": 0.5580320176399347,
-      "std_shift_ratio": 0.5748867391421002,
+      "mean_shift_ratio": 0.5595084753680939,
+      "std_shift_ratio": 0.581081432323303,
       "missing_shift_abs": 0.0,
       "drift_detected": true,
       "reasons": [
@@ -286,7 +286,7 @@
   ],
   "prediction_drift": {
     "reference_probability_mean": null,
-    "current_probability_mean": 0.992468119584597,
+    "current_probability_mean": 0.992684683692989,
     "probability_mean_shift_abs": null,
     "reference_approval_rate": null,
     "current_approval_rate": 1.0,
@@ -296,7 +296,7 @@
   },
   "retraining_required": true,
   "summary": "Detected drift in 8 feature(s): no_of_dependents, income_annum, loan_amount, loan_term, residential_assets_value, commercial_assets_value, luxury_assets_value, bank_asset_value.",
-  "created_at": "2026-04-18T11:27:13.647813+00:00",
+  "created_at": "2026-04-18T16:56:56.780657+00:00",
   "thresholds": {
     "mean_shift_ratio": 0.3,
     "std_shift_ratio": 0.5,

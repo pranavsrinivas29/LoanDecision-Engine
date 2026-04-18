@@ -13,4 +13,5 @@ COPY . /app
 
 EXPOSE 5000
 
-CMD ["mlflow", "server", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "sqlite:////app/mlflow/mlflow.db", "--default-artifact-root", "/app/mlruns", "--allowed-hosts", "mlflow,mlflow:5000,localhost,127.0.0.1"]
+#CMD ["mlflow", "server", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "sqlite:////app/mlflow/mlflow.db", "--default-artifact-root", "/app/mlruns", "--allowed-hosts", "mlflow,mlflow:5000,localhost,127.0.0.1"]
+CMD ["mlflow", "server", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "sqlite:////app/mlflow/mlflow.db", "--default-artifact-root", "/app/mlruns", "--allowed-hosts", "mlflow,mlflow:5000,localhost,localhost:5001,127.0.0.1,127.0.0.1:5001"]
